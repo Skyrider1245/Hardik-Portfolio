@@ -1,0 +1,374 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4;
+    border-bottom: 2px solid #00bcd4;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #005f73;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #00bcd4;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.skill-item {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 20px;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: #0097a7;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer .footer-content p {
+    font-size: 16px;
+}
+
+/* Media Query for screens 768px and below (tablets and mobile) */
+@media screen and (max-width: 768px) {
+    /* Header: Stack logo and nav items vertically */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header .logo h1 {
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        margin-top: 20px;
+    }
+
+    /* Profile Image */
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Skills Section */
+    .skills {
+        padding: 40px 20px;
+    }
+
+    .skill-item {
+        display: inline-block;
+        margin: 10px 15px;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* Media Query for smaller screens, 480px and below (mobile phones) */
+@media screen and (max-width: 480px) {
+    /* Header: Further reduce font size for mobile */
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    /* About Section */
+    .about {
+        padding: 30px 15px;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+    .about-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Skills Section */
+    .skills h2 {
+        font-size: 28px;
+    }
+
+    .skill-item {
+        margin: 10px 10px;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+/* Media Query for screens 768px and below (tablets and mobile) */
+@media screen and (max-width: 768px) {
+    /* Header: Stack logo and nav items vertically */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    span {
+        color: cyan;
+    }
+
+    header .logo h1 {
+        margin-bottom: 10px;
+        font-size: xx-large;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        margin-top: 20px;
+    }
+
+    /* Profile Image */
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Skills Section */
+    .skills {
+        padding: 40px 20px;
+    }
+
+    .skill-item {
+        display: inline-block;
+        margin: 10px 15px;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* Media Query for smaller screens, 480px and below (mobile phones) */
+@media screen and (max-width: 480px) {
+    /* Header: Further reduce font size for mobile */
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    /* About Section */
+    .about {
+        padding: 30px 15px;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+    .about-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Skills Section */
+    .skills h2 {
+        font-size: 28px;
+    }
+
+    .skill-item {
+        margin: 10px 10px;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 14px;
+    }
+}
+

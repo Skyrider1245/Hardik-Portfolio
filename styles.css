@@ -1,0 +1,258 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    margin-left: 5px;
+    color: white;
+    font-size: xx-large;
+}
+
+/* Basic page layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header and navigation bar */
+header {
+    background-color: #333;
+    padding: 5px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+span {
+    color: cyan;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: cyan;
+}
+
+/* Hero Section (Home) */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 60px 20px;
+    background-color: #09b4bc;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 24px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Media Query for screens 768px and below (tablets and mobile) */
+@media screen and (max-width: 768px) {
+    /* Header: Stack logo and nav items vertically */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header .logo h1 {
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        margin-top: 20px;
+    }
+
+    /* Profile Image */
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Skills Section */
+    .skills {
+        padding: 40px 20px;
+    }
+
+    .skill-item {
+        display: inline-block;
+        margin: 10px 15px;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* Media Query for smaller screens, 480px and below (mobile phones) */
+@media screen and (max-width: 480px) {
+    /* Header: Further reduce font size for mobile */
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    /* About Section */
+    .about {
+        padding: 30px 15px;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+    .about-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Skills Section */
+    .skills h2 {
+        font-size: 28px;
+    }
+
+    .skill-item {
+        margin: 10px 10px;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 14px;
+    }
+}
+
